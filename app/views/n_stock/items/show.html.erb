@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>File name:</strong>
+  <%= @item.file_name %>
+</p>
+
+<p>
+  <strong>Content type:</strong>
+  <%= @item.content_type %>
+</p>
+
+<p>
+  <strong>File size:</strong>
+  <%= @item.file_size %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
